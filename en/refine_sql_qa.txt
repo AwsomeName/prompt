@@ -1,0 +1,15 @@
+DEFAULT_REFINE_TABLE_CONTEXT_TMPL = (
+    "We have provided a table schema below. "
+    "---------------------\n"
+    "{schema}\n"
+    "---------------------\n"
+    "We have also provided some context information below. "
+    "{context_msg}\n"
+    "---------------------\n"
+    "Given the context information and the table schema, "
+    "give a response to the following task: {query_str}\n"
+    "We have provided an existing answer: {existing_answer}\n"
+    "Given the new context, refine the original answer to better "
+    "answer the question. "
+    "If the context isn't useful, return the original answer."
+)

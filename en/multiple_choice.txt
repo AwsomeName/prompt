@@ -1,0 +1,15 @@
+# 根据提供的内容，选择最相关的答案，并给出原因
+
+DEFAULT_QUERY_PROMPT_MULTIPLE_TMPL = (
+    "Some choices are given below. It is provided in a numbered "
+    "list (1 to {num_chunks}), "
+    "where each item in the list corresponds to a summary.\n"
+    "---------------------\n"
+    "{context_list}"
+    "\n---------------------\n"
+    "Using only the choices above and not prior knowledge, return the top choices "
+    "(no more than {branching_factor}, ranked by most relevant to least) that "
+    "are most relevant to the question: '{query_str}'\n"
+    "Provide choices in the following format: 'ANSWER: <numbers>' and explain why "
+    "these summaries were selected in relation to the question.\n"
+)

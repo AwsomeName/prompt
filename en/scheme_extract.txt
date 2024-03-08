@@ -1,0 +1,19 @@
+# 抽取的不是scheme，实际抽取的是属性值。需要注意一下，schema的格式
+
+DEFAULT_SCHEMA_EXTRACT_TMPL = (
+    "We wish to extract relevant fields from an unstructured text chunk into "
+    "a structured schema. We first provide the unstructured text, and then "
+    "we provide the schema that we wish to extract. "
+    "-----------text-----------\n"
+    "{text}\n"
+    "-----------schema-----------\n"
+    "{schema}\n"
+    "---------------------\n"
+    "Given the text and schema, extract the relevant fields from the text in "
+    "the following format: "
+    "field1: <value>\nfield2: <value>\n...\n\n"
+    "If a field is not present in the text, don't include it in the output."
+    "If no fields are present in the text, return a blank string.\n"
+    "Fields: "
+)
+
