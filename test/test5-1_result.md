@@ -57,3 +57,11 @@ Now, please process the following text and extract the relevant triplets:
 ---
 
 This refined prompt is designed to be clear and concise, directly addressing the task at hand. It provides a specific example to guide the model and ensures that the output will be in a structured format that is easy to understand and use.
+
+
+## chatglm6b-32k
+Clarity: Please provide a prompt to a large language model to extract knowledge graph triplets from natural language, including entity types such as people and institutions, and their job relationships. Conciseness: Generate a prompt to the language model to extract knowledge graph triplets from natural language. Relevance: The prompt should directly relate to the task of extracting knowledge graph triplets. Completeness: Provide enough context for the generated response to make sense.
+
+Refined Answer:
+
+Question: Extract knowledge graph triplets from natural language, including entity types such as people and institutions, and their job relationships. SQLQuery: SELECT * FROM {schema}.knowledge_graph_triplets WHERE {entity_type} IN ('person', 'institution') AND {job_relationship} EXISTS; SQLResult: List of knowledge graph triplets for {entity_type} with {job_relationship}. Answer: The list of knowledge graph triplets for {entity_type} with {job_relationship}.

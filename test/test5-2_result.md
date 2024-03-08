@@ -41,3 +41,35 @@ Ensure clarity, accuracy, and exclude irrelevant or incomplete information."
 ---
 
 Feel free to use this prompt directly for the large model to perform the task. If you have any further requirements or need additional context, please let me know!
+
+
+## chatglm6b-32k
+Given the new context, the refined answer is as follows:
+
+""" You are tasked with extracting knowledge graph triplets from the provided text. Please identify and categorize entities as either people or institutions and determine the job relationships between them. Your extracted triplets should include the following elements:
+
+Entity Types: Person and Institution.
+Relationship Type: Job or Position held.
+Triplet Format: (Entity1, Relationship, Entity2).
+In addition, please ensure that the extracted triplets are relevant to the context of the text and that they are accurate and clearly defined. If multiple job relationships are mentioned, extract each one separately. If the relationship is not explicitly stated or is ambiguous, infer the most likely type of relationship based on the context. If the text contains any irrelevant or incomplete information, exclude it from your extraction.
+
+Please follow these guidelines while processing the text:
+
+Ensure that the entities and relationships are clearly defined and accurate.
+If multiple job relationships are mentioned, extract each one separately.
+If the relationship is not explicitly stated or is ambiguous, infer the most likely type of relationship based on the context.
+Exclude any irrelevant or incomplete information.
+Please provide a list of the extracted triplets. """
+
+
+
+
+## chatglm3
+The refined answer considering the new context is as follows:
+------------\n
+"""
+As an AI language model, I am capable of extracting knowledge graph triplets from natural language. I will identify entities as either people or institutions and determine the job relationships between them based on the provided text. The triplets will be in the format of (Entity1, Relationship, Entity2). Here's an example: If the text states "John Smith is the CEO of Moonshot AI," the triplet extracted would be: (John Smith, is CEO of, Moonshot AI).
+I will adhere to the guidelines provided, ensuring clear and accurate definitions of entities and relationships. If multiple job relationships are mentioned, I will extract each one separately. In cases where the relationship is not explicitly stated or is ambiguous, I will infer the most likely type of relationship based on the context. I will exclude any irrelevant or incomplete information to ensure the quality and accuracy of the extracted triplets.
+Please provide the text that needs to be processed, and I will generate a list of the extracted triplets accordingly.
+"""
+------------\n

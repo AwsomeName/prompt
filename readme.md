@@ -14,3 +14,7 @@
 2、能不能用LLM根据任务情景，直接生成prompt？
 
 之前我测试的效果不理想，这次使用GPT和国内的GLM再测试一次，测试query和结果放在test目录下
+
+
+目前测试的结果，kimi（月之暗面），newbing，都不错，特别是kimi，长度长，而且个别case比newbing还好（refine的case）
+chatglm也不错，但是chatglm6b-32k不太稳定，有的时候答非所问，而有的时候又有一点惊喜，还是开源性价比。

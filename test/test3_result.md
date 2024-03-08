@@ -50,7 +50,7 @@ This prompt gives the large model a clear task description and guidelines to fol
 
 
 
-## 3. chatglm3, 优点是没有给出多余的信息，但是缺少对格式的显式约束
+## 3. chatglm3, 优点是没有给出多余的信息，但是本次回答缺少对格式的显式约束
 Prompt: Given a natural language text input, please extract the knowledge graph triplets containing entities such as people and institutions, and their job relationships. The output should be in the format of a knowledge graph, where each entity is represented as a node, and the relationships are represented as edges between the nodes. Please also provide a brief description of the input text for context.
 Example input text: "Steve Jobs was the co-founder of Apple Inc. He was responsible for revolutionizing the technology industry with innovative products like the iPhone and Macintosh computer. Tim Cook, who succeeded him as CEO, continued to drive the company's growth and expansion."
 
