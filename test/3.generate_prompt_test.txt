@@ -1,0 +1,3 @@
+测试模型生成prompt的效果
+
+I want to use a large model to extract knowledge graph triplets from natural language, including entity types such as people and institutions, and extract their job relationships. Please generate a prompt to provide for the large model to perform such a task. Please provide a prompt directly.

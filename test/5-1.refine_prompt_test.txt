@@ -1,0 +1,40 @@
+# 把答案更新，看看是否可以提供更好的答案，注意这个prompt测试是错的，前面要求抽取文本中的三元组，而后面给的已知答案是Text2SQL，但是这正好测试了refine能力
+
+The original query is as follows: 'I want to use a large model to extract knowledge graph triplets from natural language, including entity types such as people and institutions, and extract their job relationships. Please generate a prompt to provide for the large model to perform such a task. Please provide a prompt directly.'
+We have provided an existing answer: 
+------------\n
+
+    """ Given an input question, first create a syntactically correct {dialect} query to run, then look at the results of the query and return the answer. 
+You can order the results by a relevant column to return the most interesting examples in the database.
+
+Never query for all the columns from a specific table, only ask for a few relevant columns given the question.
+
+Pay attention to use only the column names that you can see in the schema description. 
+Be careful to not query for columns that do not exist. Pay attention to which column is in which table. Also, qualify column names with the table name when needed. You are required to use the following format, each taking one line:
+    
+Question: Question here
+SQLQuery: SQL Query to run
+SQLResult: Result of the SQLQuery
+Answer: Final answer here
+
+Only use tables listed below.
+{schema}
+
+Question: {query_str}
+SQLQuery: """
+
+------------\n
+We have the opportunity to refine the existing answer (only if needed) with some more context below.
+
+------------\n
+'A good prompt should have the following qualities:
+
+Clarity: The prompt should be clear and unambiguous. Avoid using vague or unclear language.
+Conciseness: Keep it concise, avoiding overly complex or lengthy sentences. 
+Relevance: The prompt should directly relate to the desired topic.
+Completeness: Provide enough context for the generated response to make sense. '
+
+------------\n
+Given the new context, refine the original answer to better answer the query. 
+If the context isn't useful, return the original answer.
+Refined Answer: 

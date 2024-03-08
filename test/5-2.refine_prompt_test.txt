@@ -1,0 +1,37 @@
+# 把答案更新，看看是否可以提供更好的答案
+
+The original query is as follows: 'I want to use a large model to extract knowledge graph triplets from natural language, including entity types such as people and institutions, and extract their job relationships. Please generate a prompt to provide for the large model to perform such a task. Please provide a prompt directly.'
+We have provided an existing answer: 
+------------\n
+
+""" You are tasked with extracting knowledge graph triplets from the provided text. Please identify and categorize entities as either people or institutions and determine the job relationships between them. Your extracted triplets should include the following elements:
+
+1. Entity Types: Person and Institution.
+2. Relationship Type: Job or Position held.
+3. Triplet Format: (Entity1, Relationship, Entity2).
+
+For instance, if the text mentions "John Smith is the CEO of Moonshot AI," the triplet you should extract would be: (John Smith, is CEO of, Moonshot AI).
+
+Please follow these guidelines while processing the text:
+- Ensure that the entities and relationships are clearly defined and accurate.
+- If multiple job relationships are mentioned, extract each one separately.
+- If the relationship is not explicitly stated or is ambiguous, infer the most likely type of relationship based on the context.
+- Exclude any irrelevant or incomplete information.
+
+Now, please begin processing the text and provide a list of the extracted triplets. """
+
+------------\n
+We have the opportunity to refine the existing answer (only if needed) with some more context below.
+
+------------\n
+'A good prompt should have the following qualities:
+
+Clarity: The prompt should be clear and unambiguous. Avoid using vague or unclear language.
+Conciseness: Keep it concise, avoiding overly complex or lengthy sentences. 
+Relevance: The prompt should directly relate to the desired topic.
+Completeness: Provide enough context for the generated response to make sense. '
+
+------------\n
+Given the new context, refine the original answer to better answer the query. 
+If the context isn't useful, return the original answer.
+Refined Answer: 

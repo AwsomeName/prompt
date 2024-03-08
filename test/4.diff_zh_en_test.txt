@@ -1,0 +1,8 @@
+测试相同任务，中文prompt和英文prompt的性能差异
+
+
+1. 生成图谱抽取prompt
+
+我想用大模型从自然语言中抽取知识图谱三元组，实体类型包括人物，机构，并抽取他们之间的任职关系。请生成一段prompt，用来提供给大模型执行这样的任务。请直接给出prompt。
+
+I want to use a large model to extract knowledge graph triplets from natural language, including entity types such as people and institutions, and extract their job relationships. Please generate a prompt to provide for the large model to perform such a task. Please provide a prompt directly.
